@@ -1,0 +1,56 @@
+html, body{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background: #000;
+  font: 15px Segoe UI Symbol, Arial;
+}
+
+#buttons{
+  width: content-box;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding-right: 5px;
+  padding-top: 5px;
+}
+
+#terminal{
+  display: flex;
+  flex: 1;
+  color: #FFF;
+}
+
+.xterm-viewport{
+  overflow: auto !important;
+}
+
+button{
+  border: 1px solid #FFF;
+  background: #333;
+  color: #FFF;
+  cursor: pointer;
+  margin: 0;
+  flex: 1;
+  height: 40px;
+  margin-left: 5px;
+}
+
+button:active, button:focus{
+  outline: 0;
+}
+
+button:active{
+  background: #555;
+}
+
+button:disabled{
+  background: #444;
+  color: #888;
+}
